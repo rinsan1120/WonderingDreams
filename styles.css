@@ -1040,6 +1040,10 @@ img {
   margin: 0 0 18px;
 }
 
+.participation-rules p {
+  white-space: pre-line;
+}
+
 .rules-modal__content ul,
 .rules-modal__content ol {
   margin: 0 0 22px;
