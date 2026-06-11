@@ -191,7 +191,11 @@ img {
   padding: calc(var(--header-height) + 70px) 24px 90px;
   isolation: isolate;
 }
-
+.text-rule-sub {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
 .hero::after {
   content: "";
   position: absolute;
