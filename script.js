@@ -1,56 +1,44 @@
 const archives = [
   {
-    id: "event-03",
-    date: "2026.06.20",
-    title: "第3回　漂泊ノ夢",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    program: [
-      "星の王子さま（後編）",
-      "智恵子抄／織姫と彦星",
-      "年とったカシワの木のさいごの夢"
-    ]
-  },
-  {
     id: "event-02",
-    date: "2026.05.23",
+    date: "2026.05.16",
     title: "第2回　漂泊ノ夢",
     youtubeId: "ScMzIvxBSi4",
     thumbnail: "https://img.youtube.com/vi/ScMzIvxBSi4/maxresdefault.jpg",
     program: [
-      "朗読作品A",
-      "朗読作品B",
-      "朗読作品C"
+      "読み手：唯ノイフ　「双子の星（二）」著者：宮沢賢治",
+      "読み手：白羽まちる　「星の王子様（前編）」著者：サン=テグジュペリ",
+      "読み手：139　「星の音が聞こえる夜に」著者：あねり,「花をつくる妖精のおはなし」著者：むち"
     ]
   },
   {
     id: "event-01",
-    date: "2026.04.18",
+    date: "2026.04.11",
     title: "第1回　漂泊ノ夢",
     youtubeId: "aqz-KE-bpKQ",
     thumbnail: "https://img.youtube.com/vi/aqz-KE-bpKQ/maxresdefault.jpg",
     program: [
-      "星の王子さま（前編）",
-      "朗読作品B",
-      "朗読作品C"
+      "読み手：花咲くバッカス　「わるい王様（伝説）」著者：アンデルセン",
+      "読み手：唯ノイフ　「双子の星」著者：宮沢賢治",
+      "読み手：ʚみけɞ　「花と人間の話」著者：小川未明"
     ]
   }
 ];
 
 const casts = [
   {
-    name: "Aさん",
-    favorite: "星の王子さま",
-    comment: "柔らかな声で物語をお届けします。",
+    name: "花咲くバッカス",
+    favorite: "＊＊＊＊＊＊＊＊",
+    comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
     image: "assets/cast-placeholder-a.jpg",
     links: [
       {
-        label: "Xを見る",
-        url: "https://x.com/usernameA"
-      },
-      {
         label: "VRChat",
         url: "https://vrchat.com/home/user/usr_xxxxx"
+      },
+      {
+        label: "X",
+        url: "https://x.com/usernameA"
       },
       {
         label: "YouTube",
@@ -59,49 +47,86 @@ const casts = [
     ]
   },
   {
-    name: "Bさん",
-    favorite: "智恵子抄",
-    comment: "詩の響きと感情の流れを大切に朗読します。",
-    image: "assets/cast-placeholder-b.jpg",
+    name: "唯ノイフ",
+    favorite: "＊＊＊＊＊＊＊＊",
+    comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
+    image: "assets/cast-placeholder-a.jpg",
     links: [
-      {
-        label: "Xを見る",
-        url: "https://x.com/usernameB"
-      },
       {
         label: "VRChat",
         url: "https://vrchat.com/home/user/usr_xxxxx"
+      },
+      {
+        label: "X",
+        url: "https://x.com/usernameA"
+      },
+      {
+        label: "YouTube",
+        url: "https://www.youtube.com/@usernameA"
       }
     ]
   },
   {
-    name: "Cさん",
-    favorite: "年とったカシワの木のさいごの夢",
-    comment: "物語のあたたかさと切なさを、穏やかな声でお届けします。",
-    image: "assets/cast-placeholder-c.jpg",
+    name: "ʚみけɞ",
+    favorite: "＊＊＊＊＊＊＊＊",
+    comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
+    image: "assets/cast-placeholder-a.jpg",
     links: [
       {
-        label: "Xを見る",
-        url: "https://x.com/usernameC"
+        label: "VRChat",
+        url: "https://vrchat.com/home/user/usr_xxxxx"
+      },
+      {
+        label: "X",
+        url: "https://x.com/usernameA"
+      },
+      {
+        label: "YouTube",
+        url: "https://www.youtube.com/@usernameA"
       }
     ]
   },
   {
-    name: "漂泊ノ海 駅長",
-    favorite: "夜や海を感じられる物語",
-    comment: "朗読会の企画と会場運営を担当しています。",
-    image: "assets/cast-placeholder-d.jpg",
+    name: "白羽まちる",
+    favorite: "＊＊＊＊＊＊＊＊",
+    comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
+    image: "assets/cast-placeholder-a.jpg",
     links: [
-      {
-        label: "Xを見る",
-        url: "https://x.com/hyohakupost"
-      },
       {
         label: "VRChat",
         url: "https://vrchat.com/home/user/usr_xxxxx"
+      },
+      {
+        label: "X",
+        url: "https://x.com/usernameA"
+      },
+      {
+        label: "YouTube",
+        url: "https://www.youtube.com/@usernameA"
+      }
+    ]
+  },
+    {
+    name: "139",
+    favorite: "＊＊＊＊＊＊＊＊",
+    comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
+    image: "assets/cast-placeholder-a.jpg",
+    links: [
+      {
+        label: "VRChat",
+        url: "https://vrchat.com/home/user/usr_xxxxx"
+      },
+      {
+        label: "X",
+        url: "https://x.com/usernameA"
+      },
+      {
+        label: "YouTube",
+        url: "https://www.youtube.com/@usernameA"
       }
     ]
   }
+
 ];
 
 
