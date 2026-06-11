@@ -106,6 +106,15 @@ const casts = [
     ]
   }
 ];
+const slides = document.querySelectorAll(".hero-slideshow .slide");
+let currentSlide = 0;
+
+setInterval(() => {
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add("active");
+}, 5000); // 5秒ごとに切替
+
 
 const archiveSelect = document.getElementById("archiveSelect");
 const archiveList = document.getElementById("archiveList");
