@@ -224,11 +224,11 @@ function renderArchive(archiveId) {
     <ul>
       ${archive.program.map((item) => `
         <li class="program-item">
-          <span class="program-item__title">
-            ${item.title}（${item.author} 著）
-          </span>
           <span class="program-item__reader">
             読み手：${item.reader}
+          </span>
+          <span class="program-item__work">
+            『${item.title}』　${item.author} 著
           </span>
         </li>
       `).join("")}
