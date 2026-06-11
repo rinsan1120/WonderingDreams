@@ -526,8 +526,8 @@ img {
 
 .archive-layout {
   display: grid;
-  grid-template-columns: 310px 1fr;
-  gap: 36px;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 40px;
   align-items: start;
 }
 
@@ -544,15 +544,12 @@ img {
 
 .archive-list {
   max-height: 520px;
-  margin-top: 0;
   padding-right: 8px;
-
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-
   overflow-y: auto;
   overscroll-behavior: contain;
-
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) rgba(255, 255, 255, 0.05);
 }
@@ -573,12 +570,6 @@ img {
 
 .archive-list::-webkit-scrollbar-thumb:hover {
   background: #93c5fd;
-}
-
-.archive-list {
-  margin-top: 20px;
-  display: grid;
-  gap: 10px;
 }
 
 .archive-list button {
@@ -614,6 +605,7 @@ img {
 }
 
 .archive-feature {
+  min-width: 0;
   overflow: hidden;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -967,10 +959,6 @@ img {
     position: static;
   }
 
-  .archive-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .event-card {
     grid-template-columns: 1fr;
   }
@@ -981,12 +969,13 @@ img {
     border-bottom: 1px solid var(--line);
   }
 
+  .archive-list {
+    max-height: 300px;
+  }
+
   .cast-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .archive-list {
-  max-height: 300px;
-}
 }
 
 @media (max-width: 620px) {
@@ -1044,10 +1033,6 @@ img {
   .event-card__actions {
     align-items: stretch;
     flex-direction: column;
-  }
-
-  .archive-list {
-    grid-template-columns: 1fr;
   }
 
   .video-thumbnail__play {

@@ -109,7 +109,6 @@ const casts = [
 
 
 
-const archiveSelect = document.getElementById("archiveSelect");
 const archiveList = document.getElementById("archiveList");
 const archiveDate = document.getElementById("archiveDate");
 const archiveTitle = document.getElementById("archiveTitle");
