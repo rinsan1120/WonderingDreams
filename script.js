@@ -6,10 +6,26 @@ const archives = [
     youtubeId: "Mbz9-PqdlbE",
     thumbnail: "https://img.youtube.com/vi/Mbz9-PqdlbE/maxresdefault.jpg",
     program: [
-      "双子の星（二）　宮沢賢治著　/　唯ノイフ",
-      "星の王子様（前編）　サン=テグジュペリ著　/　白羽まちる",
-      "星の音が聞こえる夜に　あねり著　/　139(イサク)",
-      "花をつくる妖精のおはなし　むち著　/　139(イサク)",
+      {
+        title: "双子の星（二）",
+        author: "宮沢賢治",
+        reader: "唯ノイフ"
+      },
+      {
+        title: "星の王子様（前編）",
+        author: "サン=テグジュペリ",
+        reader: "白羽まちる"
+      },
+      {
+        title: "星の音が聞こえる夜に",
+        author: "あねり",
+        reader: "139(イサク)"
+      },
+      {
+        title: "花をつくる妖精のおはなし",
+        author: "むち",
+        reader: "139(イサク)"
+      },
     ]
   },
   {
@@ -19,9 +35,21 @@ const archives = [
     youtubeId: "Mbz9-PqdlbE",
     thumbnail: "https://img.youtube.com/vi/Mbz9-PqdlbE/maxresdefault.jpg",
     program: [
-      "わるい王様（伝説）　アンデルセン著 / 花咲くバッカス",
-      "双子の星　宮沢賢治著 / 唯ノイフ",
-      "花と人間の話　小川未明著 / ʚみけɞ",
+      {
+        title: "わるい王様（伝説）",
+        author: "アンデルセン",
+        reader: "花咲くバッカス"
+      },
+      {
+        title: "双子の星",
+        author: "宮沢賢治",
+        reader: "唯ノイフ"
+      },
+      {
+        title: "花と人間の話",
+        author: "小川未明",
+        reader: "ʚみけɞ"
+      },
     ]
   }
 ];
@@ -194,7 +222,16 @@ function renderArchive(archiveId) {
   archiveProgram.innerHTML = `
     <h4>PROGRAM</h4>
     <ul>
-      ${archive.program.map((item) => `<li>${item}</li>`).join("")}
+      ${archive.program.map((item) => `
+        <li class="program-item">
+          <span class="program-item__title">
+            ${item.title}（${item.author}）
+          </span>
+          <span class="program-item__reader">
+            読み手：${item.reader}
+          </span>
+        </li>
+      `).join("")}
     </ul>
   `;
 
