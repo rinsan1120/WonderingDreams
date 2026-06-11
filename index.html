@@ -55,34 +55,41 @@
 
   <main id="main-content">
     <section class="hero" aria-labelledby="heroTitle">
-     <!-- <div class="hero__glow hero__glow--one"></div>
-      <div class="hero__glow hero__glow--two"></div>-->
-    <section class="hero" aria-labelledby="heroTitle">
-    <div class="hero-slideshow">
-        <img src="assets/photo1.jpg" class="slide active">
-        <img src="assets/photo2.jpg" class="slide">
-        <img src="assets/photo3.jpg" class="slide">
-        <img src="assets/photo4.jpg" class="slide">
-        <img src="assets/photo5.jpg" class="slide">
+
+    <div class="hero-slideshow" aria-hidden="true">
+        <img src="assets/photo1.jpg" class="slide" alt="">
+        <img src="assets/photo2.jpg" class="slide" alt="">
+        <img src="assets/photo3.jpg" class="slide" alt="">
+        <img src="assets/photo4.jpg" class="slide" alt="">
+        <img src="assets/photo5.jpg" class="slide" alt="">
     </div>
+
     <div class="hero__content">
         <p class="eyebrow">寝落ち歓迎型朗読会</p>
+
         <h1 id="heroTitle">漂泊ノ夢</h1>
+
         <p class="hero__copy">
-          眠ってしまっても、大丈夫。<br>
-          静かな海と物語の声に身をあずける、夜の朗読会。
+        眠ってしまっても、大丈夫。<br>
+        静かな海と物語の声に身をあずける、夜の朗読会。
         </p>
 
         <div class="hero__actions">
-          <a class="button button--primary" href="#next-event">次回開催を見る</a>
-          <a class="button button--ghost" href="#archives">過去の朗読を聴く</a>
-        </div>
-      </div>
+        <a class="button button--primary" href="#next-event">
+            次回開催を見る
+        </a>
 
-      <a class="scroll-guide" href="#about" aria-label="朗読会についてへ移動">
+        <a class="button button--ghost" href="#archives">
+            過去の朗読を聴く
+        </a>
+        </div>
+    </div>
+
+    <a class="scroll-guide" href="#about" aria-label="朗読会についてへ移動">
         <span>SCROLL</span>
         <span class="scroll-guide__line"></span>
-      </a>
+    </a>
+
     </section>
 
     <section class="section section--about reveal" id="about" aria-labelledby="aboutTitle">
