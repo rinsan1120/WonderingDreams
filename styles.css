@@ -967,10 +967,23 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .archive-layout {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .archive-picker {
     position: static;
     min-width: 0;
     width: 100%;
+  }
+
+  .archive-list,
+  .archive-feature {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .event-card {
