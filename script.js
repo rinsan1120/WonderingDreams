@@ -35,7 +35,6 @@ const archives = [
 const casts = [
   {
     name: "花咲くバッカス",
-    favorite: "＊＊＊＊＊＊＊＊",
     comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
     image: "assets/cast-placeholder-a.jpg",
     links: [
@@ -55,7 +54,6 @@ const casts = [
   },
   {
     name: "唯ノイフ",
-    favorite: "＊＊＊＊＊＊＊＊",
     comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
     image: "assets/cast-placeholder-a.jpg",
     links: [
@@ -75,7 +73,6 @@ const casts = [
   },
   {
     name: "ʚみけɞ",
-    favorite: "＊＊＊＊＊＊＊＊",
     comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
     image: "assets/cast-placeholder-a.jpg",
     links: [
@@ -95,7 +92,6 @@ const casts = [
   },
   {
     name: "白羽まちる",
-    favorite: "＊＊＊＊＊＊＊＊",
     comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
     image: "assets/cast-placeholder-a.jpg",
     links: [
@@ -115,7 +111,6 @@ const casts = [
   },
     {
     name: "139",
-    favorite: "＊＊＊＊＊＊＊＊",
     comment: "＊＊＊＊＊＊＊＊＊＊＊＊",
     image: "assets/cast-placeholder-a.jpg",
     links: [
@@ -241,7 +236,6 @@ function renderCasts() {
       </div>
       <div class="cast-card__body">
         <h3>${cast.name}</h3>
-        <p><strong>好きな作品:</strong> ${cast.favorite}</p>
         <p>${cast.comment}</p>
         <div class="cast-card__links">
           ${cast.links.map(link => `<a class="social-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label}</a>`).join("")}
