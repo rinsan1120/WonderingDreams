@@ -65,7 +65,7 @@ const casts = [
         url: "https://vrchat.com/home/user/usr_22d5c01d-3007-4822-bed4-6b7d841dbbf7"
       },
       {
-        label: "X",
+        label: " X ",
         url: "https://x.com/hanasakubakkas"
       }
     ]
@@ -80,7 +80,7 @@ const casts = [
         url: "https://vrchat.com/home/user/usr_c0330280-ae70-49c5-a8f2-1101e66d6cad"
       },
       {
-        label: "X",
+        label: " X ",
         url: "https://x.com/Umaretai12"
       },
       {
@@ -99,7 +99,7 @@ const casts = [
         url: "https://vrchat.com/home/user/usr_d0048c8a-391a-4ab8-a4bc-aa39a496e8d1"
       },
       {
-        label: "X",
+        label: " X ",
         url: "https://x.com/mikemike_vrc"
       }
     ]
@@ -114,7 +114,7 @@ const casts = [
         url: "https://vrchat.com/home/user/usr_43f462ca-0592-4848-9de5-f24d84056a3f"
       },
       {
-        label: "X",
+        label: " X ",
         url: "https://x.com/machiru_vrc"
       }
     ]
@@ -129,7 +129,7 @@ const casts = [
         url: "https://vrchat.com/home/user/usr_e2b8cd6f-d1c9-4b89-a788-01d8ec424e9b"
       },
       {
-        label: "X",
+        label: " X ",
         url: "https://x.com/139Magna"
       }
     ]
@@ -148,7 +148,7 @@ const staffs = [
         url: "https://vrchat.com/home/user/usr_867c325a-cb05-49cc-b983-7cf02188a9d0"
       },
       {
-        label: "X",
+        label: " X ",
         url: "https://x.com/doragon1739"
       }
     ]
@@ -164,7 +164,7 @@ const staffs = [
         url: "https://vrchat.com/home/user/usr_73654b2d-85b3-47e3-8a87-c8596b7c03c5"
       },
       {
-        label: "X",
+        label: " X ",
         url: "https://x.com/rinsan11201"
       }
     ]
